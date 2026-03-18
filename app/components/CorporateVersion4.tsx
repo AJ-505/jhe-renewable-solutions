@@ -75,6 +75,8 @@ const clients = [
   },
 ];
 
+const stats = ["100% data driven", "no guesswork", "Designed for performance"];
+
 export default function CorporateVersion4() {
   return (
     <div
@@ -82,9 +84,9 @@ export default function CorporateVersion4() {
       style={{ fontFamily: "var(--font-manrope)" }}
     >
       <nav className="fixed top-0 left-0 right-0 z-50 border-b border-slate-100 bg-white/90 backdrop-blur-lg">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3 md:py-4">
           <div className="flex items-center gap-3">
-            <div className="relative h-11 w-11 overflow-hidden rounded-xl border border-blue-200 bg-white">
+            <div className="relative h-11 w-11 overflow-hidden rounded-xl border border-blue-200 bg-white p-1 shadow-sm">
               <Image
                 src="/logo.webp"
                 alt="JHE Renewable Solutions logo"
@@ -166,26 +168,22 @@ export default function CorporateVersion4() {
             </div>
 
             <div
-              className="animate-reveal-up mt-12 flex flex-wrap items-center justify-center gap-8 border-t border-slate-200 pt-8"
+              className="animate-reveal-up mt-12 grid gap-4 border-t border-slate-200 pt-8 md:grid-cols-3"
               style={{
                 animationDelay: "400ms",
                 animationFillMode: "backwards",
               }}
             >
-              <div>
-                <div className="text-3xl font-bold text-blue-600">500+</div>
-                <div className="text-sm text-slate-500">Installations</div>
-              </div>
-              <div className="h-12 w-px bg-slate-200" />
-              <div>
-                <div className="text-3xl font-bold text-blue-600">98%</div>
-                <div className="text-sm text-slate-500">Satisfaction</div>
-              </div>
-              <div className="h-12 w-px bg-slate-200" />
-              <div>
-                <div className="text-3xl font-bold text-blue-600">15yr</div>
-                <div className="text-sm text-slate-500">Avg. System Life</div>
-              </div>
+              {stats.map((stat) => (
+                <div
+                  key={stat}
+                  className="rounded-2xl border border-slate-200 bg-white/70 px-5 py-4 text-center shadow-sm"
+                >
+                  <div className="text-lg font-semibold text-blue-600 md:text-xl">
+                    {stat}
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -194,7 +192,7 @@ export default function CorporateVersion4() {
       <section className="bg-slate-50 py-24">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mx-auto mb-16 max-w-2xl text-center">
-            <span className="text-sm font-semibold tracking-wide uppercase text-blue-600">
+            <span className="text-base font-semibold tracking-wide uppercase text-blue-600 md:text-lg">
               The Problem
             </span>
             <h2 className="mt-3 mb-4 text-3xl font-bold md:text-4xl">
@@ -227,7 +225,7 @@ export default function CorporateVersion4() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid items-center gap-16 lg:grid-cols-2">
             <div>
-              <span className="text-sm font-semibold tracking-wide uppercase text-blue-600">
+              <span className="text-base font-semibold tracking-wide uppercase text-blue-600 md:text-lg">
                 Our Approach
               </span>
               <h2 className="mt-3 mb-6 text-3xl font-bold md:text-4xl">
@@ -268,25 +266,13 @@ export default function CorporateVersion4() {
             <div className="relative">
               <div className="relative aspect-square overflow-hidden rounded-3xl bg-linear-to-br from-blue-100 to-blue-50">
                 <div className="absolute inset-8 flex items-center justify-center rounded-2xl bg-white shadow-xl">
-                  <div className="p-8 text-center">
-                    <div className="mx-auto mb-6 flex h-24 w-24 items-center justify-center rounded-full bg-linear-to-br from-blue-500 to-blue-600 shadow-lg shadow-blue-500/30">
-                      <svg
-                        viewBox="0 0 24 24"
-                        className="h-12 w-12 text-white"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="1.5"
-                      >
-                        <path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707" />
-                        <circle cx="12" cy="12" r="4" />
-                      </svg>
-                    </div>
-                    <h3 className="mb-2 text-xl font-bold text-slate-900">
-                      Engineered Excellence
-                    </h3>
-                    <p className="text-sm text-slate-500">
-                      Every system designed with precision
-                    </p>
+                  <div className="relative h-[78%] w-[78%] overflow-hidden rounded-2xl bg-slate-50">
+                    <Image
+                      src="/img.webp"
+                      alt="Engineered excellence"
+                      fill
+                      className="object-cover"
+                    />
                   </div>
                 </div>
               </div>
@@ -298,7 +284,7 @@ export default function CorporateVersion4() {
       <section className="bg-slate-50 py-24">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mx-auto mb-16 max-w-2xl text-center">
-            <span className="text-sm font-semibold tracking-wide uppercase text-blue-600">
+            <span className="text-base font-semibold tracking-wide uppercase text-blue-600 md:text-lg">
               Who We Serve
             </span>
             <h2 className="mt-3 text-3xl font-bold md:text-4xl">
