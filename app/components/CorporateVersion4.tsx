@@ -89,7 +89,7 @@ export default function CorporateVersion4() {
             <div className="relative h-11 w-11 overflow-hidden rounded-xl border border-blue-200 bg-white p-1 shadow-sm">
               <Image
                 src="/logo.webp"
-                alt="JHE Renewable Solutions logo"
+                alt="JHe Renewable Solutions logo"
                 fill
                 className="object-contain p-1"
                 priority
@@ -97,7 +97,7 @@ export default function CorporateVersion4() {
             </div>
             <div className="flex flex-col">
               <span className="text-lg leading-tight font-bold text-slate-900">
-                JHE
+                JHe
               </span>
               <span className="text-xs font-medium tracking-wide text-blue-600">
                 Renewable Solutions
@@ -335,17 +335,17 @@ export default function CorporateVersion4() {
             <div className="relative h-10 w-10 overflow-hidden rounded-lg border border-blue-400/40 bg-white/10">
               <Image
                 src="/logo.webp"
-                alt="JHE Renewable Solutions logo"
+                alt="JHe Renewable Solutions logo"
                 fill
                 className="object-contain p-1"
               />
             </div>
             <span className="font-semibold text-white">
-              JHE Renewable Solutions
+              JHe Renewable Solutions
             </span>
           </div>
           <p className="text-sm text-slate-400">
-            © 2026 JHE Renewable Solutions. All rights reserved.
+            © 2026 JHe Renewable Solutions. All rights reserved.
           </p>
         </div>
       </footer>
