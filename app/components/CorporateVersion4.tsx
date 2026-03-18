@@ -75,7 +75,7 @@ const clients = [
   },
 ];
 
-const stats = ["100% data driven", "no guesswork", "Designed for performance"];
+const stats = ["100% Data Driven", "No Guesswork", "Designed For Performance"];
 
 export default function CorporateVersion4() {
   return (
